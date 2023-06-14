@@ -21,7 +21,6 @@ import {
 } from './styles'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import SwitchDemo from '../Switch'
 
 interface Theme {
   toggleTheme: () => void
