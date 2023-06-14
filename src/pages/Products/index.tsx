@@ -1,9 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from 'swiper'
 import { Container, Content } from './styles'
 import 'swiper/css'
 import 'swiper/css/pagination'
-
 import design from '../../assets/design.jpg'
 import design2 from '../../assets/design2.jpg'
 import designhenna from '../../assets/designhenna.jpg'
@@ -23,11 +21,7 @@ export function Products() {
     <Container>
       <h1>Serviços</h1>
       <Content>
-        <Swiper
-          pagination={pagination}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
+        <Swiper pagination={pagination} className="mySwiper">
           <SwiperSlide>
             <h3>Design</h3>
             <img src={design} alt="" />
@@ -37,11 +31,7 @@ export function Products() {
             <img src={design2} alt="" />
           </SwiperSlide>
         </Swiper>
-        <Swiper
-          pagination={pagination}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
+        <Swiper pagination={pagination} className="mySwiper">
           <SwiperSlide>
             <h3>Design com Henna</h3>
             <img src={designhenna} alt="" />
@@ -51,11 +41,7 @@ export function Products() {
             <img src={henna} alt="" />
           </SwiperSlide>
         </Swiper>
-        <Swiper
-          pagination={pagination}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
+        <Swiper pagination={pagination} className="mySwiper">
           <SwiperSlide>
             <h3>Micropigmentação</h3>
             <img src={micro1} alt="" />
