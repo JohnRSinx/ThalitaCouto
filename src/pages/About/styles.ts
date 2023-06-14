@@ -52,6 +52,9 @@ export const TextAbout = styled.p`
 export const MyJourneyContainer = styled.div`
   margin-top: 5rem;
   text-align: center;
+  h2 {
+    color: ${(props) => props.theme.textDark};
+  }
 `
 export const TimeLine = styled.div`
   display: flex;
@@ -78,6 +81,7 @@ export const ContentTimeLine = styled.div`
   p,
   span {
     opacity: 0.75;
+    color: ${(props) => props.theme.textDark};
   }
 `
 export const Circle = styled.div`
