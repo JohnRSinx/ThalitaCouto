@@ -2,64 +2,62 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   margin-top: 8rem;
+  text-align: center;
+  @media screen and (max-width: 1080px) {
+    margin-top: 8rem;
+  }
   @media screen and (max-width: 768px) {
     margin-top: 2rem;
   }
-  text-align: center;
-  color: ${(props) => props.theme.textDark};
+
+  h1 {
+    color: ${(props) => props.theme.textDark};
+  }
+`
+export const ContainerCarousel = styled.div`
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 3rem;
+  justify-content: center;
+  @media screen and (max-width: 1080px) {
+    gap: 1rem;
+    grid-template-columns: 270px 270px 270px;
+  }
+  @media screen and (max-width: 1080px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 export const Content = styled.div`
-  display: flex;
-
+  text-align: center;
   h3 {
-    color: ${(props) => props.theme.secondaryColor};
+    color: ${(props) => props.theme.textDark};
+  }
+
+  @media screen and (max-width: 1080px) {
+    h3 {
+      margin-bottom: -5rem;
+    }
+  }
+  @media screen and (max-width: 360) {
+    h3 {
+      margin-bottom: 1rem;
+    }
   }
 
   img {
-    max-width: 200px;
-  }
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .swiper {
     width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide {
-    flex-direction: column;
-    text-align: center;
-    font-size: 18px;
-    background: ${(props) => props.theme.backgroundLight};
-
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
+    max-height: 100%;
     object-fit: cover;
-  }
-
-  .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 1px;
-    color: rgba(0, 0, 0, 0);
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.2);
-  }
-
-  .swiper-pagination-bullet-active {
-    color: #007aff;
-    background: #ff8c8c;
+    @media screen and (max-width: 1080px) {
+      width: 80%;
+      max-height: 80%;
+      margin-top: 3rem;
+    }
+    @media screen and (max-width: 780px) {
+      width: 65%;
+      max-height: 90%;
+      margin-top: 5rem;
+    }
   }
 `

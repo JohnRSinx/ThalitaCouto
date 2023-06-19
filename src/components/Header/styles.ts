@@ -13,6 +13,10 @@ export const Container = styled.div`
     bottom: 0;
   }
 `
+export const Logo = styled.p`
+  font-weight: 600;
+  color: ${(props) => props.theme.textDark};
+`
 export const NavHome = styled.nav`
   max-width: 968px;
   margin-left: auto;
@@ -35,10 +39,6 @@ export const NavHome = styled.nav`
   @media screen and (max-width: 350px) {
     margin: 0 0.875rem 0 0.875rem;
   }
-`
-export const Logo = styled.a`
-  font-weight: 600;
-  color: ${(props) => props.theme.primaryColor};
 `
 export const Menu = styled.div`
   @media screen and (max-width: 768px) {

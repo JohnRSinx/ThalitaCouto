@@ -62,15 +62,16 @@ export const ContainerData = styled.div`
 export const ContactMe = styled.a`
   background-color: ${(props) => props.theme.secondaryColor};
   color: #fff;
-  border: 1px solid #dddddd;
+  color: ${(props) => props.theme.textLight};
 
   padding: 10px 20px;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-  animation: ${pulseAnimation} 2s infinite;
+  animation: ${pulseAnimation} 6s infinite;
 
   &:hover {
     background-color: ${(props) => props.theme.hoverColor};
+    color: ${(props) => props.theme.backgroundLight};
   }
 `

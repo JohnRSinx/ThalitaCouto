@@ -30,7 +30,7 @@ export const Midia = styled.div`
     :hover {
       transform: scale(1.1);
       background-color: ${(props) => props.theme.hoverColor};
-      color: ${(props) => props.theme.textLight};
+      color: ${(props) => props.theme.backgroundLight};
     }
   }
 `

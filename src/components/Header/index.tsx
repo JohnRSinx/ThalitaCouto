@@ -34,6 +34,11 @@ export function Header({ toggleTheme, theme }: Theme) {
     setTogglleMenu(!togglleMenu)
   }
 
+  function handleActiveNavToggleMenu(data: string) {
+    setActiveNav(data)
+    setTogglleMenu(!togglleMenu)
+  }
+
   return (
     <Container>
       <NavHome>
@@ -45,7 +50,7 @@ export function Header({ toggleTheme, theme }: Theme) {
               <NavLink to="/" title="home">
                 <Links
                   href="#home"
-                  onClick={() => setActiveNav('home')}
+                  onClick={() => handleActiveNavToggleMenu('home')}
                   className={activeNav === 'home' ? 'active' : ''}
                 >
                   <span>
@@ -59,7 +64,7 @@ export function Header({ toggleTheme, theme }: Theme) {
               <NavLink to="/about" title="sobre mim">
                 <Links
                   href="sobremim"
-                  onClick={() => setActiveNav('about')}
+                  onClick={() => handleActiveNavToggleMenu('about')}
                   className={activeNav === 'about' ? 'active' : ''}
                 >
                   <span>
@@ -73,7 +78,7 @@ export function Header({ toggleTheme, theme }: Theme) {
               <NavLink to="/courses" title="cursos">
                 <Links
                   href="cursos"
-                  onClick={() => setActiveNav('courses')}
+                  onClick={() => handleActiveNavToggleMenu('courses')}
                   className={activeNav === 'courses' ? 'active' : ''}
                 >
                   <span>
@@ -87,7 +92,7 @@ export function Header({ toggleTheme, theme }: Theme) {
               <NavLink to="/services" title="serviços">
                 <Links
                   href="serviços"
-                  onClick={() => setActiveNav('services')}
+                  onClick={() => handleActiveNavToggleMenu('services')}
                   className={activeNav === 'services' ? 'active' : ''}
                 >
                   <span>
