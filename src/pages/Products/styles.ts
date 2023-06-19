@@ -7,7 +7,7 @@ export const Container = styled.div`
     margin-top: 8rem;
   }
   @media screen and (max-width: 768px) {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 
   h1 {

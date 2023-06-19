@@ -7,7 +7,7 @@ export const Container = styled.div`
     color: ${(props) => props.theme.textDark};
   }
   @media screen and (max-width: 768px) {
-    margin: 1rem 1rem 5rem 1rem;
+    margin: 1.5rem 1rem 5rem 1rem;
 
     gap: 3rem;
   }

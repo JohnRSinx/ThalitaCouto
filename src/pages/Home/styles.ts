@@ -26,7 +26,7 @@ export const Container = styled.div`
     align-items: center;
   }
   @media screen and (max-width: 480px) {
-    margin: 0.5rem;
+    margin: 2rem 0.5rem 0.5rem 0.5rem;
   }
 `
 

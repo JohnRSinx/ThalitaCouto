@@ -14,11 +14,11 @@ export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   @media screen and (max-width: 768px) {
-    margin: 2rem 2rem;
+    margin: 1.5rem 2rem;
   }
 `
 export const Content = styled.div`
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   gap: 2rem;
 
