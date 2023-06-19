@@ -42,7 +42,7 @@ export function Header({ toggleTheme, theme }: Theme) {
   return (
     <Container>
       <NavHome>
-        <Logo href="">Thalita Couto</Logo>
+        <Logo>Thalita Couto</Logo>
 
         <Menu className={togglleMenu ? '' : 'showmenu'}>
           <NavGrid>
